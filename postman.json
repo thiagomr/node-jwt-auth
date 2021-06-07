@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "f01ccf0f-534e-4935-a104-7775a03bc9bc",
+		"name": "node-jwt-auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"thiagodmor@gmail.com\",\n    \"password\": \"q1w2e3r4\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{node-jwt-auth}}/user/login",
+					"host": [
+						"{{node-jwt-auth}}"
+					],
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"thiagodmor@gmail.com\",\n    \"password\": \"q1w2e3r4\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{node-jwt-auth}}/user/login",
+					"host": [
+						"{{node-jwt-auth}}"
+					],
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refresh",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{node-jwt-auth}}/user/refresh-token",
+					"host": [
+						"{{node-jwt-auth}}"
+					],
+					"path": [
+						"user",
+						"refresh-token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "revoke",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{node-jwt-auth}}/user/refresh-token",
+					"host": [
+						"{{node-jwt-auth}}"
+					],
+					"path": [
+						"user",
+						"refresh-token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "me",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{node-jwt-auth}}/user/refresh-token",
+					"host": [
+						"{{node-jwt-auth}}"
+					],
+					"path": [
+						"user",
+						"refresh-token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
