@@ -1,5 +1,6 @@
-import { MONGO_HOST } from '../config';
 import mongoose from 'mongoose';
+import { logger } from '../utils/logger';
+import { MONGO_HOST } from '../config';
 
 export class Mongo {
     private url: string
@@ -7,9 +8,9 @@ export class Mongo {
     constructor() {
         this.url = MONGO_HOST;
 
-        mongoose.connection.on('connected', () => console.info(`mongo connected at ${this.url}`));
-        mongoose.connection.on('disconnected', (e: Error) => console.info('mongo disconnected', e));
-        mongoose.connection.on('error', (e: Error) => console.info('mongo error', e));
+        mongoose.connection.on('connected', () => logger.info(`mongo connected at ${this.url}`));
+        mongoose.connection.on('disconnected', (e: Error) => logger.info('mongo disconnected', e));
+        mongoose.connection.on('error', (e: Error) => logger.info('mongo error', e));
     }
 
     async connect(): Promise<void> {

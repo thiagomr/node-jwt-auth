@@ -1,5 +1,6 @@
 import 'dotenv/config';
 import 'reflect-metadata';
+import { logger } from './utils/logger';
 import { Server } from './app/server';
 import { Mongo } from './utils/mongo';
 
@@ -11,7 +12,7 @@ import { Mongo } from './utils/mongo';
         await mongo.connect();
         server.listen();
     } catch (error) {
-        console.error(error);
+        logger.error(error);
         process.exit(1);
     }
 })();
