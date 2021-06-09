@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  api:
+    build:
+      context: .
+    ports:
+      - "8000:8000"
+    environment:
+      - TZ=America/New_York
+      - MONGO_HOST='mongodb://mongo:27017/auth'
+      - API_KEY_SECRET='avocado'
+    links:
+      - mongo
+    command: npm run start:dev
+    volumes:
+      - .:/src
+  mongo:
+        image: mongo:latest
+        container_name: mongo
+        ports:
+            - 27017:27017

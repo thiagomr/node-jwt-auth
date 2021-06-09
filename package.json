@@ -5,7 +5,7 @@
     "main": "src/index.ts",
     "scripts": {
         "start": "npm run build && node dist/index.js",
-        "start:dev": "nodemon src/index.ts | pino-pretty",
+        "start:dev": "concurrently \"npm run build:watch\" \"nodemon dist/index.js | pino-pretty\"",
         "build": "rimraf dist && tsc",
         "build:watch": "tsc --pretty --watch",
         "lint": "eslint . --ext .ts",
