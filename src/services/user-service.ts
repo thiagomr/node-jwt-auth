@@ -41,8 +41,6 @@ export class UserService {
             throw new Error('Unauthorized');
         }
 
-        delete user.password;
-
         const token = this.token.generateAccess(user.token);
         const refreshToken = this.token.generateRefresh(user.token);
         const expiresAt = new Date(Date.now() + REFRESH_TOKEN_EXPIRES_MILISECONDS);

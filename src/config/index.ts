@@ -1,4 +1,4 @@
-export const SECRET = process.env.API_KEY_SECRET;
+export const API_KEY_SECRET = process.env.API_KEY_SECRET;
 
 export const MONGO_HOST = process.env.MONGO_HOST;
 
