@@ -9,6 +9,15 @@ An API with some samples about refresh token auth strategies with jwt
 - typegoose
 - jsonwebtoken
 
+## Setup
+
+### Install dependencies
+`npm install`
+
 ## Running on docker
 
 `docker-compose up`
+
+## Running tests
+
+`npm test`
