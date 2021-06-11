@@ -30,10 +30,10 @@ const sut = () => {
     user.firstName = 'Thiago';
     user.lastName = 'Moraes';
     user.password = 'q1w2e3';
-    user.email = 'thiagodmor@gmail.com';
+    user.email = 'user@pokemail.com';
 
     const userParams = {
-        email: 'thiagodmor@gmail.com',
+        email: 'user@pokemail.com',
         password: 'q1w2e3'
     };
 

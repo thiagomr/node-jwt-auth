@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\": \"thiagodmor@gmail.com\",\n    \"password\": \"q1w2e3r4\"\n}",
+					"raw": "{\n    \"email\": \"user@pokemail.com\",\n    \"password\": \"q1w2e3r4\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -39,7 +39,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\": \"thiagodmor@gmail.com\",\n    \"password\": \"q1w2e3r4\"\n}",
+					"raw": "{\n    \"email\": \"user@pokemail.com\",\n    \"password\": \"q1w2e3r4\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
