@@ -23,4 +23,4 @@ An API with some samples about refresh token auth strategies with jwt
 `npm test`
 
 ## Docs
-Import the 'postman.json' file on project root
+Import the 'postman.json' file on your http client
